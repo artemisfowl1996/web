@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FORMS</title>
+</head>
+<body>
+  <form name="ganeshform">
+    <input type="checkbox" name="box">
+    <input type="submit" value="SUBMIT" onclick="validator()">
+  </form>
+  <script>
+    function validator(){
+      if(document.ganeshform.box.checked)
+        alert("yes it's checked");
+      else
+        alert("no it's not checked");
+    }
+  </script>
+</body>
+</html>

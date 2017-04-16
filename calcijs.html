@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script>
+    //var x = prompt("enter the first variable","");
+    //var y = prompt("enter the second variable","");
+    document.write("enter your choice:"+<br/>+"1)ADD"+<br/>+"2)SUBTRACT"+<br/>+"3)MULTIPLY"+<br/>+"4)DIVIDE"+<br/>);
+    var z = prompt("enter your choice","");
+    switch(z){
+      case 1:add(x,y);
+      break;
+      case 2:sub(x,y);
+      break;
+      case 3:mul(x,y);
+      break;
+      case 4:div(x,y);
+      break;
+      default:document.write("wrong choice entered");
+
+      function add(x,y){
+        doucument.write(x+y);
+      }
+      function sub(x,y){
+        doucument.write(x-y);
+      }
+      function mul(x,y){
+        doucument.write(x*y);
+      }
+      function div(x,y){
+        if(y!=0)
+          doucument.write(x/y);
+        else
+          doucument.write("ERROR");
+      }
+    }
+  </script>
+</body>
+</html>
